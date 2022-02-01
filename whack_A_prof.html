@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- -->
+
+<head>
+    <!-- Tells the browser to use the utf-8 character encoding when translating   -->
+    <!--  Machine lang to human readable text and vice versa-->
+    <meta charset="UTF-8" />
+    <!-- To make page look perfect in multiple devices 
+    <meta name="viewport" content="width=device-width, initial-scele=1.0" />    -->
+    <!--Link to the css file  -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Define title of the document-->
+    <title>Whack A Professor</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- define a section of the document -->
+        <div class="heading2">
+            <div class="score" id="sc">Points:<span>0</span></div>
+            <div class="missed" id="mis">Missed:<span>0</span></div>
+        </div>
+        <!-- define control section of the document -->
+        <div class="buttons">
+            <button class="play">PLAY</button>
+            <button class="stop" disabled=true>EXIT</button>
+            <button class="pause" disabled=true>PAUSE</button>
+        </div>
+        <div class="holescont">
+            <!-- Define a sectiions where holes contains-->
+            <div class="hole hole1" data-id="">
+                <!-- <img class="mole" src="mole.png">   -->
+            </div>
+            <div class="hole hole2" data-id=""></div>
+            <div class="hole hole3" data-id=""></div>
+            <div class="hole hole4" data-id=""></div>
+            <div class="hole hole5" data-id=""></div>
+
+        </div>
+        <!-- define a  section of the document which contain custom cursor i.e. hammer-->
+        <div class="cursor">
+            <!-- Define an image of cursor-->
+            <img src='graphics_audio/hammerCursor1.png'>
+        </div>
+    </div>
+    <!--to import (an external) script -->
+    <script src="apps.js"></script>
+</body>
+
+</html>

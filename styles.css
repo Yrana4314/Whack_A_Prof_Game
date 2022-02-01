@@ -1,0 +1,179 @@
+*{
+    /*cursor: none; */
+    
+}
+body{
+    text-align: center;
+    background: url('graphics_audio/background.jpg') no-repeat center center fixed;
+    background-size: cover;  
+    overflow: hidden;  
+}
+
+.heading2{
+    font-size: 1.25em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+
+}
+#sc{
+    position:absolute;
+    top:20%;
+    left: 30%;
+}
+#mis{
+    position: absolute;
+    top: 20%;
+    left:65%;
+}
+
+.holescont{ 
+    background-color: inherit;
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+    width: 1080px;
+    height: 300px;
+    margin: 1em 0;
+    justify-items: center;
+    
+}
+.hole{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%; /*makes holes circle  */
+    background-color:inherit;
+    overflow: hidden;
+    
+    }
+.mole{
+    position: absolute;
+    z-index: 1;
+    height: 100px;
+    background: inherit;
+    border: 1px solid yellowgreen;
+    border-radius: 10%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    animation: appear 0.3s linear;
+    pointer-events: none;
+}
+@keyframes appear{
+    from{bottom:-90px}
+    to{
+        bottom:0;
+    }
+}
+.hole1{
+    position: absolute;
+    left:5%;
+    top:55%;
+
+}
+.hole2{
+    position: absolute;
+    left:42%;
+    top:60%;
+}
+.hole3{
+    position: absolute;
+    left: 25%;
+    top: 35%;
+}
+.hole4{
+    position: absolute;
+    left: 60%;
+    top: 30%;
+
+}
+.hole5{
+    position: absolute;
+    left: 80%;
+    top: 60%;
+}
+
+.buttons{
+    margin-top: 3em;
+    text-align: center;
+    
+}
+.buttons button{
+    background-color: burlywood;
+    color: black;
+    height: 50px;
+    width: 70px;
+    border-radius: 10px;
+    font-weight: bold;
+    outline:none;
+    z-index: 5;
+    cursor: default;
+    font-family: serif;
+}
+.play{
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    background-color: rgb(88, 88, 86);
+    border: 1px solid inherit;
+    color: blue;
+    outline: none;
+    
+    
+}
+.play:hover:enabled{
+    color: red;
+    z-index: 10;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.stop{
+    background-color: rgb(88, 88, 86);
+    border: 1px solid inherit;
+    color: blue;
+    position: absolute;
+    top: 12%;
+    left: 60%;
+    /*display: none; */
+    
+}
+.pause{
+    background-color: rgb(88, 88, 86);
+    border: 1px solid inherit;
+    color: blue;
+    position: absolute;
+    top: 12%;
+    left: 40%;
+    /*display: none; */
+}
+.stop:hover:enabled{
+    color: red;
+    background-color: aqua;
+    cursor: pointer;
+}
+.pause:hover:enabled{
+    color: red;
+    background-color: aqua;
+    cursor: pointer;
+}
+.cursor img{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    height: 60px;
+    z-index: 10;
+    transform: translate(-30px, -20px);
+    pointer-events:none;
+}
+
+
+@keyframes hit {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform:rotate(-50deg);
+    }
+}
